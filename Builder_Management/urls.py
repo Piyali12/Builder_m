@@ -17,11 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic.base import TemplateView
 
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('templates', TemplateView.as_view(template_name='home.html')),
-    path('templates', TemplateView.as_view(template_name='login.html')),
 
+    path('lead', TemplateView.as_view(template_name='lead.html')),
 ]
